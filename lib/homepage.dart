@@ -557,10 +557,20 @@ class MyHomepage extends StatelessWidget {
   }
 
   Image materialpic() {
-    return Image.asset('images/porklibsMaterial.jpg', fit: BoxFit.cover);
+    return Image.asset(
+      'images/porklibsMaterial.jpg',
+      fit: BoxFit.contain,
+      height: 230,
+      width: 100,
+    );
   }
 
   Image finalpic() {
-    return Image.asset('images/porklibsFinal.jpg', fit: BoxFit.cover);
+    return Image.asset(
+      'images/porklibsFinal.jpg',
+      fit: BoxFit.contain,
+      height: 250,
+      width: 100,
+    );
   }
 }
