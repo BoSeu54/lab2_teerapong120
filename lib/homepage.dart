@@ -75,7 +75,7 @@ class MyHomepage extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(
-            top: 20,
+            top: 25,
             left: 20,
             right: 0,
             bottom: 20,
