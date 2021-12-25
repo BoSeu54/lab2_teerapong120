@@ -32,35 +32,40 @@ class MyHomepage extends StatelessWidget {
             materialpic(),
             materialdata(),
             cuisinemethod(),
+            finalpic(),
             finallyData(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(
-                    top: 5,
-                    left: 20,
-                    right: 0,
-                    bottom: 40,
-                  ),
-                  child: Row(
-                    children: [
-                      Text(
-                        "ที่มา: https://www.wongnai.com/recipes/\npork-ribs-in-bbq-sauce",
-                        style: GoogleFonts.kanit(
-                          color: Colors.black87,
-                          fontSize: 17,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+            source(),
           ],
         ),
       ),
+    );
+  }
+
+  Row source() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(
+            top: 5,
+            left: 20,
+            right: 0,
+            bottom: 40,
+          ),
+          child: Row(
+            children: [
+              Text(
+                "ที่มา: https://www.wongnai.com/recipes/\npork-ribs-in-bbq-sauce",
+                style: GoogleFonts.kanit(
+                  color: Colors.black87,
+                  fontSize: 17,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 
@@ -70,7 +75,7 @@ class MyHomepage extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(
-            top: 2,
+            top: 20,
             left: 20,
             right: 0,
             bottom: 20,
@@ -79,9 +84,9 @@ class MyHomepage extends StatelessWidget {
             children: [
               Text(
                 "\t\t\t\tเรียบร้อยแล้วสำหรับ “ซี่โครงหมูบาร์บีคิวอบชีส” \nเป็นเมนูเด็กหอที่ทำง่าย ๆ เพียงแค่มีหม้อหุงข้าวชาร์ป\nแคนดี้รุ่น KSH-Q03 แค่นี้เพื่อนๆก็สามารถสร้างสรรค์\nเมนูที่ทำง่ายสำหรับ 1-2 คน ด้วยหม้อหุงข้าวใบจิ๋ว\nขนาด 0.3 ลิตร ขนาดเล็กกะทัดรัด เก็บง่ายไม่เปลือง\nพื้นที่อีกด้วย  ",
-                style: GoogleFonts.trirong(
+                style: GoogleFonts.kanit(
                   color: Colors.black87,
-                  fontSize: 17,
+                  fontSize: 16.5,
                   fontWeight: FontWeight.normal,
                 ),
               ),
@@ -553,5 +558,9 @@ class MyHomepage extends StatelessWidget {
 
   Image materialpic() {
     return Image.asset('images/porklibsMaterial.jpg', fit: BoxFit.cover);
+  }
+
+  Image finalpic() {
+    return Image.asset('images/porklibsFinal.jpg', fit: BoxFit.cover);
   }
 }
